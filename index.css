@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: Montserrat;
+    background-image: url(../imagenes/fondo\ mac.png);
+    height: 800px;
+}
+
+
+
+.barra-desplegable {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    padding-left: 20px ;
+    
+}
+main {
+    height: 100%;
+}
+
+.desplegable-info {
+    display: flex;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.app-imagen {
+    width: 50px;
+}
+
+.seccion-apps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    
+}
+
+.apps {
+    margin-top: 50px;
+}
+
+.contenedor-app {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(161, 93, 224, 0.712);
+    padding: 30px;
+    border-radius: 50px;
+    gap: 15px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.contenedor-app img {
+    width: 50px;
+}
+
+.contenedor-app a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.imagen-app-menu {
+    width: 100%;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.imagen-app-menu:hover {
+    transform: translateY(-8px);
+}
+
+
+
+.contenedor-menu-inf {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-inferior {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.menu-inferior a {
+    width:5%;
+}
+
+@media (max-width:576px) {
+    body {
+        height: 710px;
+    }
+    .contenedor-app{
+        padding: 30px;
+    }
+    .contenedor-app iframe{
+        width: 200px;
+    }
+
+    .contenedor-app img {
+        width: 35px;
+    }
+
+    .contenedor-app a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        
+    }
+
+    .seccion-apps {
+        gap: 10px;
+    }
+    .menu-inferior {
+        width: 91%;
+    }
+    .menu-inferior {
+        padding:5px;
+    }
+
+    .menu-inferior a {
+        width: 18%;
+    }
+}
