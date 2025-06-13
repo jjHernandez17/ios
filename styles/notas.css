@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Montserrat;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+    padding: 20px;
+}
+.opciones {
+    display: flex;
+    gap: 15px;
+}
+.volver {
+    display: flex;
+    gap: 15px;
+}
+
+.opciones a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.volver a {
+    color: yellow;
+}
+
+   
+.espacio-texto {
+    background-color: rgba(104, 104, 104, 0.233);
+    width: 70%;
+    border: none;
+}
+
+.espacio-texto::placeholder {
+    color: white;
+}
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

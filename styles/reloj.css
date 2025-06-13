@@ -1,0 +1,121 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: black;
+    font-family:Montserrat ;
+}
+
+.encabezado {
+    color: yellow;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.tamaño-fuente {
+    font-size: 30px;
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+.contenedor-alarmas {
+    color: white;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.interfaz {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.interfaz h1 {
+    font-size: 35px;
+}
+.linea {
+    width: 100%; 
+    height: 1px;
+    background-color: gray;
+}
+.dormir {
+    display: flex;
+    gap: 10px;
+}
+.alarma {
+    background-color: rgba(128, 128, 128, 0.226);
+    height: 220px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.alarma:hover {
+    background-color: rgba(128, 128, 128, 0.808);
+}
+
+.alarma-hora {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.tarde-mañana {
+    margin-bottom: 10px;
+}
+.hora {
+    font-size: 40px;
+}
+
+.alarmas-cuadricula {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+@media (max-width: 576px) {
+    .alarmas-cuadricula {
+        display: none;
+    }
+    .contenedor-alarmas-celular {
+        color: white;
+        padding-left: 50px;
+        padding-right: 50px ;
+    }
+
+    .alarma-cel {
+        list-style: none;
+        border-bottom: solid 1px rgb(117, 117, 117) ;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .alarma-hora-cel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hora-cel {
+        font-size: 50px;
+    }
+
+    .alarma-hora-cel {
+        display: flex;
+    }
+
+}
